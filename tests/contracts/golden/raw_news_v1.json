@@ -1,0 +1,18 @@
+{
+  "event_id": "01KSGCKGKWVAEJ2KF92TQV4JRG",
+  "schema_version": "1.0.0",
+  "producer": "receiver",
+  "produced_at": "2026-05-25T20:18:15.804+00:00",
+  "trace": [],
+  "payload": {
+    "channel": "@interfaxonline",
+    "message_id": 12345678,
+    "text": "Газпром объявил о рекордной квартальной прибыли: 271 млрд рублей, дивиденды 19.6 рублей на акцию выше прогноза",
+    "tg_published_at": "2026-05-25T20:18:15.804+00:00",
+    "received_at": "2026-05-25T20:18:15.804+00:00",
+    "text_hash": "a3f29c4b00000000000000000000000000000000000000000000000000000000",
+    "has_media": false,
+    "is_reply": false,
+    "is_forward": false
+  }
+}

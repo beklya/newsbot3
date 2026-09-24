@@ -1,0 +1,25 @@
+{
+  "event_id": "01KSGCKH15GYX7MBGY72A75JDJ",
+  "schema_version": "1.0.1",
+  "producer": "decision",
+  "produced_at": "2026-05-25T20:18:16.229+00:00",
+  "trace": [],
+  "payload": {
+    "prediction_event_id": "01KSGCKH14Z40DZ6K05AW196D0",
+    "action": "EXECUTE",
+    "reject_reason": "",
+    "ticker": "GAZP",
+    "side": "BUY",
+    "horizon": "60m",
+    "entry_price": 271.5,
+    "stop_loss": 270.22,
+    "take_profit": 273.4,
+    "quantity": 15,
+    "risk_rub": 2500.0,
+    "expected_pnl_rub": 5970.0,
+    "rr_ratio": 2.38,
+    "open_positions": 1,
+    "daily_pnl_pct": 0.42,
+    "cooldown_active": false
+  }
+}

@@ -1,0 +1,45 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+keys.txt
+
+# Data: everything under data/ except the trained predictor models
+data/*
+!data/models/
+data/models/**/*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Runtime artifacts
+logs/
+*.log
+quik_live/*.csv
+quik_live/*.xlsx
+quik_live/*.jsonl
+quik_live/*.json
+sprint4/**/data/
+
+# Research outputs (scripts write these to paths given on the command line)
+*.parquet
+*.jsonl
+*.csv
+*.xlsx
+docs/legacy promt/
+
+# Local tooling
+.claude/
+CLAUDE.md
+.idea/
+.vscode/
+.coverage
+htmlcov/

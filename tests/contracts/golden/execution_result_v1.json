@@ -1,0 +1,26 @@
+{
+  "event_id": "01KSGCKH16KG23QB7ZGZ7YB9P3",
+  "schema_version": "1.0.1",
+  "producer": "bridge",
+  "produced_at": "2026-05-25T20:18:16.230+00:00",
+  "trace": [],
+  "payload": {
+    "signal_event_id": "01KSGCKH15GYX7MBGY72A75JDJ",
+    "status": "FILLED",
+    "trans_id": 1000001,
+    "order_num": 987654321,
+    "error_message": "",
+    "filled_price": 271.55,
+    "filled_quantity": 15,
+    "fill_time": "2026-05-25T20:18:16.230+00:00",
+    "stop_order_num": 987654322,
+    "tp_order_num": 987654323,
+    "realized_pnl_rub": null,
+    "exit_reason": null,
+    "exit_price": null,
+    "exit_time": null,
+    "duration_sec": null,
+    "bridge_latency_ms": 247.0,
+    "quik_ack_latency_ms": 98.5
+  }
+}

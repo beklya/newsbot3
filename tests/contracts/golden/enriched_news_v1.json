@@ -1,0 +1,33 @@
+{
+  "event_id": "01KSGCKGKXEDETDQ7H8RHA78QF",
+  "schema_version": "1.1.0",
+  "producer": "enricher",
+  "produced_at": "2026-05-25T20:18:15.805+00:00",
+  "trace": [],
+  "payload": {
+    "raw_event_id": "01KSGCKGKWVAEJ2KF92TQV4JRG",
+    "llm_provider": "groq",
+    "llm_model": "llama-3.3-70b-versatile",
+    "llm_latency_ms": 987.5,
+    "llm_input_tokens": 124,
+    "llm_output_tokens": 89,
+    "prompt_version": "1.0.0",
+    "is_financial": true,
+    "tickers": [
+      {
+        "ticker": "GAZP",
+        "direction": "long",
+        "confidence": 0.82,
+        "sentiment": "positive",
+        "impact_strength": 0.75,
+        "rationale": "Рекордная прибыль и повышенные дивиденды — сильный позитив для котировок в ближайший час"
+      }
+    ],
+    "summary": "GAZP: позитивная новость о квартальной прибыли и дивидендах",
+    "expected_timeframe": "short",
+    "urgency": "medium",
+    "category": "corporate",
+    "is_actionable": true,
+    "llm_raw_response": "{\"tickers\":[{\"ticker\":\"GAZP\",\"direction\":\"long\",\"confidence\":0.82,\"sentiment\":\"positive\",\"impact_strength\":0.75}]}"
+  }
+}

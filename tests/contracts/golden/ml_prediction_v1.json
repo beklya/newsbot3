@@ -1,0 +1,38 @@
+{
+  "event_id": "01KSGCKH14Z40DZ6K05AW196D0",
+  "schema_version": "1.0.0",
+  "producer": "predictor",
+  "produced_at": "2026-05-25T20:18:16.228+00:00",
+  "trace": [],
+  "payload": {
+    "enriched_event_id": "01KSGCKGKXEDETDQ7H8RHA78QF",
+    "ticker": "GAZP",
+    "features_built_at": "2026-05-25T20:18:16.228+00:00",
+    "features_hash": "b8e1f9d200000000000000000000000000000000000000000000000000000000",
+    "feature_count": 67,
+    "last_bar_time": "2026-05-25T20:18:16.228+00:00",
+    "last_close": 271.45,
+    "predictions": [
+      {
+        "horizon": "60m",
+        "predicted_mfe_long_pct": 1.12,
+        "predicted_mae_long_pct": 0.47,
+        "predicted_mfe_short_pct": 0.31,
+        "predicted_mae_short_pct": 0.84,
+        "rr_long": 2.38,
+        "rr_short": 0.37
+      },
+      {
+        "horizon": "30m",
+        "predicted_mfe_long_pct": 0.84,
+        "predicted_mae_long_pct": 0.39,
+        "predicted_mfe_short_pct": 0.25,
+        "predicted_mae_short_pct": 0.68,
+        "rr_long": 2.15,
+        "rr_short": 0.37
+      }
+    ],
+    "inference_latency_ms": 12.4,
+    "model_version": "xgb_mfe_mae_phase2_v1.0.0"
+  }
+}

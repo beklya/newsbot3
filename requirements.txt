@@ -1,0 +1,55 @@
+# === Контракты и валидация ===
+pydantic>=2.9,<3.0
+pydantic-settings>=2.5,<3.0
+
+# === Redis async client ===
+redis>=5.1,<6.0
+
+# === Конфиг ===
+PyYAML>=6.0
+
+# === Тестирование ===
+pytest>=8.3
+pytest-asyncio>=0.24
+
+# === Логирование ===
+structlog>=24.4
+
+# === Унаследовано из Phase 2 (на будущее) ===
+# Эти уже стоят глобально, но в venv нужно повторить
+pandas>=2.2,<3.1
+numpy>=1.26,<3.0
+pyarrow>=17.0
+xgboost>=2.1
+scikit-learn>=1.5  # XGBoost 3.x sklearn API requires it
+joblib>=1.4
+python-ulid>=3.0
+Telethon>=1.36
+orjson>=3.10
+
+# === Sprint 4 sampling / analytics ===
+polars>=0.20
+xlsxwriter>=3.2
+
+# === LLM clients (Enricher: Groq primary, OpenAI for Sprint 5.6 DeepInfra benchmark) ===
+# groq was historically installed via ad-hoc `pip install groq` and never made it
+# into requirements.txt — fresh venv on a clean machine wouldn't get it. Fixed
+# 2026-05-30 during Sprint 5.11 VPS deployment.
+groq>=1.2,<2.0
+openai>=1.50
+
+# === Sprint 5.10 — SOCKS5 proxy support (Receiver Telethon + Enricher Groq) ===
+# Optional outbound proxy: set PROXY_ENABLED=true + PROXY_URL in .env.
+# - httpx[socks] pulls socksio for Groq HTTP path
+# - python-socks is what modern Telethon (1.30+) uses for SOCKS5 (NOT PySocks —
+#   without python-socks Telethon silently drops the proxy= kwarg and connects
+#   direct).
+# - PySocks kept as backup for any sync code paths.
+httpx[socks]>=0.28
+python-socks[asyncio]>=2.4
+PySocks>=1.7
+# === Used by tests / analysis scripts (were missing) ===
+fakeredis>=2.20
+openpyxl>=3.1
+requests>=2.31
+scipy>=1.11
